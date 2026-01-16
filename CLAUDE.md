@@ -8,14 +8,27 @@ VibeNLP is a new NLP project. The codebase is currently being initialized.
 
 ## Language Requirements
 
-**Important**: All generated files, including code comments, documentation, and any text content, must be bilingual in **English and French**.
+### Student-Facing Files (需要双语的文件)
 
-- Code comments: Include both English and French versions
-- Documentation: Provide content in both languages
-- Example format for comments:
+**Important**: Only student-facing files (such as exercises) require bilingual support in **English and French**.
+
+- Bilingual files must be **separate**: create one file for French (fr) and one for English (en)
+- Example file structure:
+  - `exercises/exercise1_fr.md` (French version)
+  - `exercises/exercise1_en.md` (English version)
+
+### Internal/Preparation Files (内部准备文件)
+
+Files used for course preparation (such as "idea" files) can be written in **Chinese** with **English technical terms**.
+
+- Use Chinese for general content and explanations
+- Use English for technical vocabulary and terminology
+- Example:
   ```python
-  # English: This function processes the input data
-  # Français: Cette fonction traite les données d'entrée
+  # 这个function用来process input data
+  def process_data(input_data):
+      # 使用transformer model进行处理
+      pass
   ```
 
 ## Development Setup
