@@ -81,7 +81,7 @@ Le dépôt tiers est utile pour :
 **English**:
 Ralph Wiggum uses a **Stop hook** mechanism to intercept Claude's exit attempts:
 
-1. You start a task with `/ralph-loop "your task" --max-iterations 20`
+1. You start a task with `/ralph-wiggum:ralph-loop "your task" --completion-promise "DONE" --max-iterations 20`
 2. Claude begins working on the task
 3. When Claude would normally stop, the Stop hook intercepts it
 4. The original prompt is re-injected into the session
@@ -94,7 +94,7 @@ Ralph Wiggum uses a **Stop hook** mechanism to intercept Claude's exit attempts:
 **Français**:
 Ralph Wiggum utilise un mécanisme de **Stop hook** pour intercepter les tentatives de sortie de Claude :
 
-1. Vous démarrez une tâche avec `/ralph-loop "votre tâche" --max-iterations 20`
+1. Vous démarrez une tâche avec `/ralph-wiggum:ralph-loop "votre tâche" --completion-promise "DONE" --max-iterations 20`
 2. Claude commence à travailler sur la tâche
 3. Quand Claude s'arrêterait normalement, le Stop hook l'intercepte
 4. Le prompt original est réinjecté dans la session
@@ -155,7 +155,7 @@ Ralph Wiggum utilise un mécanisme de **Stop hook** pour intercepter les tentati
 **Français**: La syntaxe de base pour démarrer une boucle Ralph est :
 
 ```bash
-/ralph-loop "your task description" --max-iterations <number> --completion-promise "DONE"
+/ralph-wiggum:ralph-loop "your task description" --completion-promise "DONE" --max-iterations <number>
 ```
 
 **Parameters / Paramètres**:
@@ -171,7 +171,7 @@ Ralph Wiggum utilise un mécanisme de **Stop hook** pour intercepter les tentati
 
 **Task / Tâche**:
 ```bash
-/ralph-loop "Create a Python function to calculate fibonacci numbers, write tests for it, run the tests, and fix any issues until all tests pass. Output DONE when complete." --max-iterations 10 --completion-promise "DONE"
+/ralph-wiggum:ralph-loop "Create a Python function to calculate fibonacci numbers, write tests for it, run the tests, and fix any issues until all tests pass. Output DONE when complete." --completion-promise "DONE" --max-iterations 10
 ```
 
 **What to Observe / Ce qu'il faut observer**:
@@ -292,7 +292,7 @@ Ralph Wiggum utilise un mécanisme de **Stop hook** pour intercepter les tentati
 
 **Task / Tâche**:
 ```bash
-/ralph-loop "Create a Python class for a simple calculator with add, subtract, multiply, and divide methods. Write comprehensive unit tests including edge cases (division by zero, large numbers, negative numbers). Run the tests and fix any failures. Output DONE when all tests pass." --max-iterations 15 --completion-promise "DONE"
+/ralph-wiggum:ralph-loop "Create a Python class for a simple calculator with add, subtract, multiply, and divide methods. Write comprehensive unit tests including edge cases (division by zero, large numbers, negative numbers). Run the tests and fix any failures. Output DONE when all tests pass." --completion-promise "DONE" --max-iterations 15
 ```
 
 ### Exercise C: Documentation Generation / Exercice C: Génération de documentation
@@ -303,7 +303,7 @@ Ralph Wiggum utilise un mécanisme de **Stop hook** pour intercepter les tentati
 
 **Task / Tâche**:
 ```bash
-/ralph-loop "Analyze all Python files in the src/ directory and create a comprehensive README.md with: project description, installation instructions, usage examples for each module, and API documentation. Verify the markdown formatting is correct. Output DONE when complete." --max-iterations 8 --completion-promise "DONE"
+/ralph-wiggum:ralph-loop "Analyze all Python files in the src/ directory and create a comprehensive README.md with: project description, installation instructions, usage examples for each module, and API documentation. Verify the markdown formatting is correct. Output DONE when complete." --completion-promise "DONE" --max-iterations 8
 ```
 
 ### Exercise D: Debugging Challenge / Exercice D: Défi de débogage
@@ -314,7 +314,7 @@ Ralph Wiggum utilise un mécanisme de **Stop hook** pour intercepter les tentati
 
 **Task / Tâche**:
 ```bash
-/ralph-loop "Find and fix all bugs in the file utils.py. For each bug found: identify it, explain why it's a bug, fix it, and add a test case to prevent regression. Continue until no more bugs are found or all tests pass. Output DONE when complete." --max-iterations 12 --completion-promise "DONE"
+/ralph-wiggum:ralph-loop "Find and fix all bugs in the file utils.py. For each bug found: identify it, explain why it's a bug, fix it, and add a test case to prevent regression. Continue until no more bugs are found or all tests pass. Output DONE when complete." --completion-promise "DONE" --max-iterations 12
 ```
 
 ## Expected Outcomes / Résultats attendus
