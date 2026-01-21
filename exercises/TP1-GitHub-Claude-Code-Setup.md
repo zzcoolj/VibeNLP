@@ -29,13 +29,8 @@ Claude Code is an AI assistant that can help you with coding tasks directly thro
 
 ### Step 2: Install the Claude Code GitHub App
 
-1. Visit the [Claude Code GitHub App installation page](https://github.com/apps/claude-code)
-2. Click **"Install"** or **"Configure"**
-3. Select the repository you want to use for this exercise
-4. Grant the necessary permissions when prompted
-5. Complete the installation
-
-**Verification**: Check that the app appears in your repository settings under "Integrations" → "GitHub Apps"
+Open Claude Code in terminal, and run ```/install-github-app```, follow instructions
+[Reference](https://code.claude.com/docs/en/github-actions)
 
 ## Part 2: Basic Configuration (5 minutes)
 
