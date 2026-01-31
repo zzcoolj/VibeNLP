@@ -8,28 +8,27 @@ VibeNLP is a new NLP project. The codebase is currently being initialized.
 
 ## Language Requirements
 
-### Student-Facing Files (需要双语的文件)
+### Bilingual Files (中法双语文件)
 
-**Important**: Only student-facing files (such as exercises) require bilingual support in **English and French**.
+**Important**: The following files require **Chinese and French** bilingual versions:
+- All `.md` files in the root directory (except `CLAUDE.md`)
+- All files in the `exercises/` folder
 
-- Bilingual files must be **separate**: create one file for French (fr) and one for English (en)
-- Example file structure:
-  - `exercises/exercise1_fr.md` (French version)
-  - `exercises/exercise1_en.md` (English version)
+**File naming convention**:
+- Chinese version: `filename_cn.md` (e.g., `COURSE_IDEAS_cn.md`)
+- French version: `filename_fr.md` (e.g., `COURSE_IDEAS_fr.md`)
 
-### Internal/Preparation Files (内部准备文件)
+**Synchronization rule**: When the Chinese version is modified, the corresponding French version must be updated accordingly.
 
-Files used for course preparation (such as "idea" files) can be written in **Chinese** with **English technical terms**.
+Example file structure:
+- `COURSE_IDEAS_cn.md` (Chinese version)
+- `COURSE_IDEAS_fr.md` (French version)
+- `exercises/TP1-GitHub-Claude-Code-Setup_cn.md` (Chinese version)
+- `exercises/TP1-GitHub-Claude-Code-Setup_fr.md` (French version)
 
-- Use Chinese for general content and explanations
-- Use English for technical vocabulary and terminology
-- Example:
-  ```python
-  # 这个function用来process input data
-  def process_data(input_data):
-      # 使用transformer model进行处理
-      pass
-  ```
+### Internal Files (内部文件)
+
+`CLAUDE.md` is an internal configuration file and does not require translation.
 
 ## Development Setup
 
